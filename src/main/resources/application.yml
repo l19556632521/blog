@@ -1,0 +1,19 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: lmeng_blog
+  # database
+  datasource:
+    url: jdbc:mysql://124.220.222.98:3306/blog?useUnicode=true&characterEncoding=UTF-8&serverTimeZone=UTC&useSSL=false
+    username: root
+    password: txy
+    driver-class-name: com.mysql.jdbc.Driver
+#mybatis-plus
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      table-prefix: ms_
+
